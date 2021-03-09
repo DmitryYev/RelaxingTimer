@@ -1,0 +1,28 @@
+.input {
+    display: inline-block;
+    border: none;
+    width: 16rem;
+    background-color: transparent;
+    font-size: 10rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, .7);    
+} 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.delimiter {
+    color: rgba(255, 255, 255, .7); 
+    font-size: 12.5rem;
+}
