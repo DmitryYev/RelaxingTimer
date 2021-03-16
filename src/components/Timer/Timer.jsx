@@ -15,10 +15,10 @@ const Timer = ({ start, clear, pause, setStart }) => {
     }, [clear, pause])
 
     useEffect(() => {
-        if (start) {
-            let timeout = setTimeout(reduceTimer, 1000)
-            setTimeoutId(timeout)
-        }
+        if (!start) return
+
+        let timeout = setTimeout(reduceTimer, 1000)
+        setTimeoutId(timeout)
     }, [start, timer])
 
     const clearTimer = () => {
@@ -41,7 +41,7 @@ const Timer = ({ start, clear, pause, setStart }) => {
             })
             return
         }
-        
+
         setTimer({
             ...timer,
             seconds: seconds <= 10 ? `0${--seconds}` : --seconds

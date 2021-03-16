@@ -72,6 +72,7 @@ function App() {
             <Button handler={clearHandler} value='Clear timer' />
           </div>
         </div>
+        <p className='sounds-credits'>Sounds from <a href='https://www.zapsplat.com/'>Zapsplat.com</a></p>
       </div>
     </div>
   )

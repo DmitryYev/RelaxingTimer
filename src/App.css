@@ -28,3 +28,17 @@
     flex-direction: column;
     align-items: center;
 }
+
+.sounds-credits {
+    position: absolute;
+    bottom: 0;
+    font-size: .5rem; 
+    color: rgba(255, 255, 255, .5);
+}
+
+.sounds-credits > a {
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+}
+
+
